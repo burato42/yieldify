@@ -1,4 +1,4 @@
-#Yieldify test task
+# Yieldify test task
 
 This is the solution of test task for Software Engineer in Test position.
 I've taken Google Keep App as an application under test.
@@ -8,15 +8,15 @@ All test cases are written using Gherkin. I have automated only basic tests.
 Python 3.6 has been chosen as a programming language for automated tests implementation and _behave_ as a BDD framework.
 To interact with a browser I have used Selenium Webdriver.
 
-##Content
+## Content
 
 - Test Cases
 - Installation
 - Test running
 
-##Test Cases
+## Test Cases
 
-###Prerequisites
+### Prerequisites
 It's needed to have an Google account to start testing. You can use these credentials:
 ```
 login: test.yieldify.task@gmail.com
@@ -27,7 +27,7 @@ After login to the account the tests could be executed.
 I understand that the number of even very simple test cases could be very big so I've decided not to cover all possible scenarios
 To decrease number of tests, I've checked some additional features (reminders, colllaborators etc.) separately only for text notes.
 For list notes I add these features during one test. 
-###List of test cases
+### List of test cases
 ```
 
 Feature: Test Google Keep text note creation
@@ -275,11 +275,21 @@ Feature: Other operations
     And the note is present on Archive page
 ```
 
-##Installation
+## Installation
 
-###Preparation
 - Install Python 3.6 (https://www.python.org/downloads/)
 - Install pip if it was not installed before (https://pip.pypa.io/en/stable/installing/)
 - Install Firefox browser if it was not installed before (https://www.mozilla.org/en-US/firefox/new/)
 - Install git (https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- Clone project from github ()
+- Clone project from github (https://github.com/burato42/yieldify)
+- To install requirements need to execute the command `pip install -U -r requirements.txt` from project directory
+
+## Test running
+
+To run test need to run command 
+```
+behave
+```
+from the project directory.
+
+Currently these tests works with Firefox only.
