@@ -20,7 +20,7 @@ To interact with a browser I have used Selenium Webdriver.
 It's needed to have an Google account to start testing. You can use these credentials:
 ```
 login: test.yieldify.task@gmail.com
-password: testyieldify2013
+password: **********
 ```
 
 After login to the account the tests could be executed.
